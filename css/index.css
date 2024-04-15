@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.image1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 40%; 
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.register_img {
+    width: 95%;
+    height: 50%; 
+    margin-top: 40%;
+    margin-bottom: auto;
+}
+.card1{
+    border-right: 1px solid rgb(228, 225, 225);
+}
+.card1
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; 
+}
+.register-text{
+    margin-left: 15%;
+    color: rgb(63, 63, 63);
+}
+.card2
+ {
+    flex: 1; 
+    margin-top: 7%;
+}
+
+.input1 {
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    position: relative;
+    border:none;
+    width: 70%;
+    border-bottom: 1px solid rgb(168, 166, 166) ;
+}
+
+.input1::after {
+    content: attr(placeholder);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.input1:focus::after,
+.input1:not(:placeholder-shown)::after {
+    top: 5px;
+    right: 10px;
+    font-size: 12px;
+    color: #555;
+}
+.main-button{
+    padding: 14px 120px;
+    margin-top: 10%;
+    border-radius: 10px;
+    background-color: rgb(75, 72, 72);
+    color: white;
+    border: 1px solid rgb(75, 72, 72);;
+}
