@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <title>South Sudan Weather</title>
 <style>
   body {
@@ -40,9 +42,11 @@ h1 {
 <body>
  
 
-     <a href="Home.html"><i class="fas fas fa-home fa-2x" style="color: white; margin-top: 4%; float: left; margin-left: 2%;"></i></a> 
+  <a href="Home.html"><i class="fas fas fa-home fa-2x" style="color: white; margin-top: 2%; float: left; margin-left: 2%;" data-aos="zoom-in-up"
+    data-aos-duration="1500"></i></a> 
 
-<div class="container">
+<div class="container" data-aos="fade-down"
+data-aos-duration="1500">
   <h1>South Sudan Weather</h1>
   <div class="temperature" id="current-temperature"></div>
   <div class="chart-container">
@@ -101,3 +105,16 @@ function createTemperatureChart(times, temperatures) {
 
 </body>
 </html>
+<script>
+  AOS.init();
+</script>
+<script>
+  window.addEventListener("scroll", function() {
+      var navbar = document.querySelector(".navbar");
+      if (window.scrollY > navbar.offsetTop) {
+          navbar.classList.add("sticky");
+      } else {
+          navbar.classList.remove("sticky");
+      }
+  });
+</script>
