@@ -7,7 +7,11 @@
 <style>
   body {
     font-family: Arial, sans-serif;
+<<<<<<< HEAD
     background-color: #171718; 
+=======
+    background-color: #919fec; 
+>>>>>>> 65a503b9e4f6c1c71ebd8620c3cd154af1b36ce0
     text-align: center;
     margin: 0;
     padding: 0;
@@ -28,7 +32,44 @@
     width: 80%;
     margin-top: 20px;
   }
+<<<<<<< HEAD
   
+=======
+  .header-nav {
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px; 
+    z-index: 1000; 
+    box-sizing: border-box; 
+    text-align: right; 
+}
+
+.header-nav {
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 60px; 
+    z-index: 1000; 
+    box-sizing: border-box; 
+    text-align: right; 
+}
+
+.header-nav a {
+    color: #f1ede5;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+>>>>>>> 65a503b9e4f6c1c71ebd8620c3cd154af1b36ce0
 h1 {
     margin-top: 60px;
     margin-bottom: 20px; 
@@ -38,6 +79,15 @@ h1 {
 </style>
 </head>
 <body>
+<<<<<<< HEAD
+=======
+    <div class="header-nav">
+        <a href="Home.html">Home</a>
+        <a href="Resource.html">Resources</a>
+        <a href="Monitor.html">Monitor</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+>>>>>>> 65a503b9e4f6c1c71ebd8620c3cd154af1b36ce0
     
 
 <div class="container">
@@ -50,7 +100,11 @@ h1 {
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
+<<<<<<< HEAD
 
+=======
+// Fetch current temperature data from Open Meteo API
+>>>>>>> 65a503b9e4f6c1c71ebd8620c3cd154af1b36ce0
 fetch('https://api.open-meteo.com/v1/forecast?latitude=4.85&longitude=31.60&current=temperature_2m')
   .then(response => response.json())
   .then(data => {
@@ -62,7 +116,11 @@ fetch('https://api.open-meteo.com/v1/forecast?latitude=4.85&longitude=31.60&curr
     document.getElementById('current-temperature').innerText = 'Failed to fetch current temperature data';
   });
 
+<<<<<<< HEAD
 
+=======
+// Fetch hourly temperature data from Open Meteo API
+>>>>>>> 65a503b9e4f6c1c71ebd8620c3cd154af1b36ce0
 fetch('https://api.open-meteo.com/v1/forecast?latitude=4.85&longitude=31.60&past_days=10&hourly=temperature_2m')
   .then(response => response.json())
   .then(data => {
@@ -83,8 +141,13 @@ function createTemperatureChart(times, temperatures) {
       datasets: [{
         label: 'Hourly Temperature (°C)',
         data: temperatures,
+<<<<<<< HEAD
         backgroundColor: 'rgba(255, 255, 255, 0.2)', 
         borderColor: 'rgba(255, 255, 255, 1)', 
+=======
+        backgroundColor: 'rgba(255, 255, 255, 0.2)', /* White background color */
+        borderColor: 'rgba(255, 255, 255, 1)', /* White border color */
+>>>>>>> 65a503b9e4f6c1c71ebd8620c3cd154af1b36ce0
         borderWidth: 1
       }]
     },
