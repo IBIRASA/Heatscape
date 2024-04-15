@@ -21,16 +21,18 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     border-bottom: 1px solid rgb(151, 150, 150);
     padding: 20px 80px;
 
 }
 
-.logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
+.logo {
+    width: 20px;
+    height: 20px;
+}
+.img-logo {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .nav-links {
@@ -97,7 +99,7 @@ z-index: 2;
 color: white;
 }
 .overlay-text{
-    font-size: 40px;
+font-size: 40px;
 text-align: left;
 padding: 0px 90px;
 width: 60%;

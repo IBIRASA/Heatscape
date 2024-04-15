@@ -69,7 +69,7 @@ h1 {
     right: 0; 
     width: 100%; 
     background-color: rgba(0, 0, 0, 0.7); 
-    padding: 60px; 
+    padding: 20px; 
     z-index: 1000; 
     box-sizing: border-box; 
     text-align: right; 
@@ -79,7 +79,7 @@ h1 {
     color: #f1ede5;
     text-decoration: none;
     margin-left: 20px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .header-nav a:hover {
@@ -99,14 +99,73 @@ h1 {
     .resource-link:hover {
         background-color: #0056b3; 
     }
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 70px;
+    gap: 40%;
+}
+.contact-item{
+    line-height: 4rem;
+}
+
+.input1 {
+    padding: 20px;
+    background-color: black;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    position: relative;
+    border:none;
+    width: 50%;
+    border-bottom: 1px solid rgb(168, 166, 166) ;
+}
+
+.input1::after {
+    content: attr(placeholder);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.input1:focus::after,
+.input1:not(:placeholder-shown)::after {
+    top: 5px;
+    right: 10px;
+    font-size: 12px;
+    color: #555;
+}
+.main-button{
+    padding: 14px 120px;
+    margin-top: 10%;
+    border-radius: 10px;
+    background-color: rgb(75, 72, 72);
+    color: white;
+    border: 1px solid rgb(75, 72, 72);
+}
+.main-buttonnn{
+    padding: 14px 40px;
+    margin-top: 10%;
+    border-radius: 10px;
+    background-color: rgb(75, 72, 72);
+    color: white;
+    border: 1px solid rgb(75, 72, 72);;
+}
     </style>
 </head>
 <body>
     <div class="header-nav">
-        <a href="#">Home</a>
+        <a href="Home.html">Home</a>
         <a href="Resource.html">Resources</a>
         <a href="#">Monitor</a>
-        <a href="#">Contact</a>
+        <a href="#section4">Contact</a>
     </div>
     
     <h1>Resources & Articles</h1>
@@ -156,4 +215,31 @@ h1 {
         </div>
     </div>
 </body>
+
+<footer id="section4">
+    <div class="contacts">
+        <div class="contact-item" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">
+            <h1 style="color: white;">Address</h1>
+            <i class="fas fa-map-marker-alt"></i>
+            <span> 123 street, South Sudan </span>
+        </div>
+        <div class="contact-item" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
+            <i class="fas fa-envelope"></i>
+            <span>HeatScape@example.com</span>
+        </div>
+        <div class="contact-item" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="2000">
+            <i class="fas fa-clock"></i>
+            <span>8:00 am - 5:30 pm</span>
+        </div>
+    </div>
+    <div class="contacts">
+        <h1 style="color: white;">Reach Out to Us</h1>
+        <form>
+            <input type="text" placeholder="Fullnames" class="input1" data-aos="fade-down"data-aos-easing="linear "data-aos-duration="2500" />
+            <input type="text" placeholder="Email" class="input1" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="3000"/>
+            <input type="password" placeholder="Password" class="input1" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="3400"/><br>
+                <button class="main-buttonnn" >Submit</button>
+        </form>
+    </div>
+</footer>
 </html>
