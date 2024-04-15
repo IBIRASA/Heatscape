@@ -1,153 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/home.css" rel="stylesheet"/>
-<script  src="./js/navbar.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <title>Home</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#">Logo</a>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href="css/home.css" rel="stylesheet"/>
+            <script  src="./js/navbar.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <title>Home</title>
+        </head>
+        <body>
+            <header>
+                <nav class="navbar">
+                    <div class="logo">
+                        <a href="#">Logo</a>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#" data-aos="fade-down">Home</a></li>
+                        <li><a href="#section2"  data-aos="zoom-in-up"  data-aos-delay="200">Resource</a></li>
+                        <li><a href="#section3"  data-aos="zoom-in-up"  data-aos-delay="300">Monitor</a></li>
+                        <li><a href="#section4"  data-aos="zoom-in-up"  data-aos-delay="400">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="content">
+                <video  autoplay loop muted width="100%">
+                    <source src="./images/video.mp4" type="video/mp4">   
+                </video>
+                <div class="overlay">
+                    <p class="overlay-text" style="font-size: 50px; font-weight: bolder; margin-top: 12%;"data-aos="fade-left" data-aos-easing="linear"data-aos-duration="1500" >Heatwaves in South Sudan</p>
+                    <p class="overlay-text2" data-aos="fade-left"data-aos-easing="linear"data-aos-duration="1000">
+                        South Sudan is on the frontlines of climate change, 
+                        experiencing extreme heatwaves that are becoming more frequent and severe. 
+                        These heatwaves are more than just hot weather - they’re a threat to our agriculture, our water supply, and our way of life. 
+                        But it’s not too late to act. Learn about the science behind these heatwaves, the impact they’re having on our communities, and the steps we can take to mitigate their effects. 
+                        Your actions today can help ensure a sustainable future for South Sudan.
+                    </p>
+                    <div> 
+                        <button class="main-button1"data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">Learn more</button></div>
+                    </div>
+             </div>
+            <div class="section2" id="section2">
+                <p class="section-p" data-aos="fade-left"data-aos-easing="linear"data-aos-duration="1000">Educational Resources</p>
+            <div class="main-card">
+                <div class="card-2" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">
+                    <img src="./images/article1.png" alt="Article Image" class="card-image">
+                    <div class="card-content">
+                        <h2 class="card-title">Article1:Heat waves in South Sudan</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="Resource.html" class="card-link">Read More</a>
+                    </div>
+                </div>
+            <div class="card-2" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
+                <img src="./images/article2.png" alt="Article Image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Article2:Heat waves in South Sudan</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="Resource.html" class="card-link">Read More</a>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#" data-aos="fade-down">Home</a></li>
-                <li><a href="#section2"  data-aos="zoom-in-up"  data-aos-delay="200">Resource</a></li>
-                <li><a href="#section3"  data-aos="zoom-in-up"  data-aos-delay="300">Monitor</a></li>
-                <li><a href="#section4"  data-aos="zoom-in-up"  data-aos-delay="400">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="content">
-        <video  autoplay loop muted width="100%">
-            <source src="./images/video.mp4" type="video/mp4">
-           
-        </video>
-        <div class="overlay">
-       <p class="overlay-text" style="font-size: 50px; font-weight: bolder; margin-top: 12%;"data-aos="fade-left" data-aos-easing="linear"
-       data-aos-duration="1500" >Heatwaves in South Sudan</p>
-       <p class="overlay-text2" data-aos="fade-left"
-       data-aos-easing="linear"
-       data-aos-duration="1000">South Sudan is on the frontlines of climate change, 
-        experiencing extreme heatwaves that are becoming more frequent and severe. 
-        These heatwaves are more than just hot weather - they’re a threat to our agriculture, our water supply, and our way of life. 
-        But it’s not too late to act. Learn about the science behind these heatwaves, the impact they’re having on our communities, and the steps we can take to mitigate their effects. 
-        Your actions today can help ensure a sustainable future for South Sudan.</p>
-        <div> <button class="main-button1"data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="1500">Learn more</button></div>
-        </div>
-    </div>
-    <div class="section2" id="section2">
-<p class="section-p" data-aos="fade-left"
-data-aos-easing="linear"
-data-aos-duration="1000">Educational Resources</p>
-<div class="main-card">
-    <div class="card-2" data-aos="fade-down"
-    data-aos-easing="linear"
-    data-aos-duration="1000">
-        <img src="./images/article1.png" alt="Article Image" class="card-image">
-        <div class="card-content">
-            <h2 class="card-title">Article1:Heat waves in South Sudan</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="Resource.html" class="card-link">Read More</a>
-        </div>
-    </div>
-    <div class="card-2" data-aos="fade-down"
-    data-aos-easing="linear"
-    data-aos-duration="1500">
-        <img src="./images/article2.png" alt="Article Image" class="card-image">
-        <div class="card-content">
-            <h2 class="card-title">Article2:Heat waves in South Sudan</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="Resource.html" class="card-link">Read More</a>
-        </div>
-    </div>
-    <div class="card-2" data-aos="fade-down"
-    data-aos-easing="linear"
-    data-aos-duration="2000">
-        <img src="./images/article3.png" alt="Article Image" class="card-image">
-        <div class="card-content">
-            <h2 class="card-title">Article3:Heat waves in South Sudan</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="Resource.html" class="card-link">Read More</a>
-        </div>
-    </div>
-    <div class="card-2" data-aos="fade-down"
-    data-aos-easing="linear"
-    data-aos-duration="3000">
-        <img src="./images/article4.png" alt="Article Image" class="card-image">
-        <div class="card-content">
-            <h2 class="card-title">Article4:Heat waves in South Sudan</h2>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a href="Resource.html" class="card-link">Read More</a>
+            <div class="card-2" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="2000">
+                <img src="./images/article3.png" alt="Article Image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Article3:Heat waves in South Sudan</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <a href="Resource.html" class="card-link">Read More</a>
+                </div>
+            </div>
+            <div class="card-2" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="3000">
+                <img src="./images/article4.png" alt="Article Image" class="card-image">
+                <div class="card-content">
+                <h2 class="card-title">Article4:Heat waves in South Sudan</h2>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="Resource.html" class="card-link">Read More</a>
+            </div>
         </div>
     </div>
 </div>
-
-
-    </div>
     <div class="section3" id="section3">
-        <p class="section-p" data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1000">Live Weather Monitor</p>
-        <p style="color: whitesmoke;padding: 10px 100px; margin-right: 10%;" data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="2000">Stay informed with our Live Climate Monitor, an interactive dashboard providing up-to-the-minute weather and temperature data from across South Sudan.
+        <p class="section-p" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">Live Weather Monitor</p>
+        <p style="color: whitesmoke;padding: 10px 100px; margin-right: 10%;" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="2000">
+            Stay informed with our Live Climate Monitor, an interactive dashboard providing up-to-the-minute weather and temperature data from across South Sudan.
              Witness the reality of climate change as you monitor the fluctuations and trends in our environment.</p>
-             <button class="main-buttonn" data-aos="fade-down"
-             data-aos-easing="linear"
-             data-aos-duration="3000">View Data</button>
+        <button class="main-buttonn" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="3000">View Data</button>
     </div>
     <footer id="section4">
-       
-          
-            <div class="contacts">
-                <div class="contact-item" data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1000">
-                    <h1 style="color: white;">Address</h1>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span> 123 street, South Sudan </span>
-                </div>
-                <div class="contact-item" data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500">
-                    <i class="fas fa-envelope"></i>
-                    <span>HeatScape@example.com</span>
-                </div>
-                <div class="contact-item" data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="2000">
-                    <i class="fas fa-clock"></i>
-                    <span>8:00 am - 5:30 pm</span>
-                </div>
+        <div class="contacts">
+            <div class="contact-item" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">
+                <h1 style="color: white;">Address</h1>
+                <i class="fas fa-map-marker-alt"></i>
+                <span> 123 street, South Sudan </span>
             </div>
-            <div class="contacts">
-                <h1 style="color: white;">Reach Out to Us</h1>
-                <form>
-                    <input type="text" placeholder="Fullnames" class="input1" data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="2500"/>
-                    <input type="text" placeholder="Email" class="input1" data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="3000"/>
-                    <input type="password" placeholder="Password" class="input1" data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="3400"/><br>
+            <div class="contact-item" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
+                <i class="fas fa-envelope"></i>
+                <span>HeatScape@example.com</span>
+            </div>
+            <div class="contact-item" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="2000">
+                <i class="fas fa-clock"></i>
+                <span>8:00 am - 5:30 pm</span>
+            </div>
+        </div>
+        <div class="contacts">
+            <h1 style="color: white;">Reach Out to Us</h1>
+            <form>
+                <input type="text" placeholder="Fullnames" class="input1" data-aos="fade-down"data-aos-easing="linear "data-aos-duration="2500" />
+                <input type="text" placeholder="Email" class="input1" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="3000"/>
+                <input type="password" placeholder="Password" class="input1" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="3400"/><br>
                     <button class="main-buttonnn" >Submit</button>
-                </form>
-            </div>
-     
+            </form>
+        </div>
     </footer>
-
 </body>
 </html>
