@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-<title>South Sudan Weather</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>South Sudan Weather</title>
+    <style>
   body {
     font-family: Arial, sans-serif;
     background-color: #171718; 
@@ -35,12 +35,137 @@ h1 {
     color: #fff; 
     padding-top: 300px; 
 }
+header {
+    background-color: transparent; 
+    color: white;
+    padding: 10px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3; 
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(151, 150, 150);
+    padding: 20px 80px;
+
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+.img-logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    width: 25%;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    text-decoration: none;
+    color: #58595a;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 70px;
+    gap: 40%;
+}
+.contact-item{
+    line-height: 4rem;
+}
+
+.input1 {
+    padding: 20px;
+    background-color: black;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    position: relative;
+    border:none;
+    width: 50%;
+    border-bottom: 1px solid rgb(168, 166, 166) ;
+}
+
+.input1::after {
+    content: attr(placeholder);
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.input1:focus::after,
+.input1:not(:placeholder-shown)::after {
+    top: 5px;
+    right: 10px;
+    font-size: 12px;
+    color: #555;
+}
+.main-button{
+    padding: 14px 120px;
+    margin-top: 10%;
+    border-radius: 10px;
+    background-color: rgb(75, 72, 72);
+    color: white;
+    border: 1px solid rgb(75, 72, 72);
+}
+.main-buttonnn{
+    padding: 14px 40px;
+    margin-top: 10%;
+    border-radius: 10px;
+    background-color: rgb(75, 72, 72);
+    color: white;
+    border: 1px solid rgb(75, 72, 72);;
+}
+
 </style>
 </head>
 <body>
  
 
-     <a href="Home.html"><i class="fas fas fa-home fa-2x" style="color: white; margin-top: 4%; float: left; margin-left: 2%;"></i></a> 
+     <header>
+      <nav class="navbar">
+          <div class="logo">
+              <a href="images/heatscapelogo.png">
+                <a href="Home.html"><img src="images/heatscapelogo.png" alt="HeatScape Logo" class="img-logo"></a>
+              </a>
+          </div>
+          <ul class="nav-links">
+              <li><a href="Home.html" data-aos="fade-down">Home</a></li>
+              <li><a href="Resource.html"  data-aos="zoom-in-up"  data-aos-delay="200">Resource</a></li>
+              <li><a href="Monitor.html"  data-aos="zoom-in-up"  data-aos-delay="300">Monitor</a></li>
+              <li><a href="#section4"  data-aos="zoom-in-up"  data-aos-delay="400">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
 
 <div class="container">
   <h1>South Sudan Weather</h1>
@@ -100,4 +225,31 @@ function createTemperatureChart(times, temperatures) {
 </script>
 
 </body>
+
+<footer id="section4">
+  <div class="contacts">
+      <div class="contact-item" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1000">
+          <h1 style="color: white;">Address</h1>
+          <i class="fas fa-map-marker-alt"></i>
+          <span> 123 street, South Sudan </span>
+      </div>
+      <div class="contact-item" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="1500">
+          <i class="fas fa-envelope"></i>
+          <span>HeatScape@example.com</span>
+      </div>
+      <div class="contact-item" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="2000">
+          <i class="fas fa-clock"></i>
+          <span>8:00 am - 5:30 pm</span>
+      </div>
+  </div>
+  <div class="contacts">
+      <h1 style="color: white;">Reach Out to Us</h1>
+      <form>
+          <input type="text" placeholder="Fullnames" class="input1" data-aos="fade-down"data-aos-easing="linear "data-aos-duration="2500" />
+          <input type="text" placeholder="Email" class="input1" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="3000"/>
+          <input type="password" placeholder="Password" class="input1" data-aos="fade-down"data-aos-easing="linear"data-aos-duration="3400"/><br>
+              <button class="main-buttonnn" >Submit</button>
+      </form>
+  </div>
+</footer>
 </html>
